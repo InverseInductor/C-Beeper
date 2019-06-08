@@ -81,28 +81,6 @@ F 3 "~" H 5000 4150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_BJT:BC549 Q2
-U 1 1 5CFA805E
-P 5400 4000
-F 0 "Q2" H 5591 4046 50  0000 L CNN
-F 1 "BC549C" H 5591 3955 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5600 3925 50  0001 L CIN
-F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 5400 4000 50  0001 L CNN
-	1    5400 4000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_BJT:BC559 Q1
-U 1 1 5CFA9866
-P 4900 3700
-F 0 "Q1" H 5091 3654 50  0000 L CNN
-F 1 "BC559C" H 5091 3745 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5100 3625 50  0001 L CIN
-F 3 "http://www.fairchildsemi.com/ds/BC/BC557.pdf" H 4900 3700 50  0001 L CNN
-	1    4900 3700
-	1    0    0    1   
-$EndComp
-$Comp
 L Diode:1N4148 D1
 U 1 1 5CFAD86E
 P 4750 3000
@@ -134,17 +112,6 @@ F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5930 2850 50  0
 F 3 "~" H 6000 2850 50  0001 C CNN
 	1    6000 2850
 	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_BJT:BC559 Q3
-U 1 1 5CFAED4F
-P 6400 3000
-F 0 "Q3" H 6591 2954 50  0000 L CNN
-F 1 "BC559C" H 6591 3045 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 6600 2925 50  0001 L CIN
-F 3 "http://www.fairchildsemi.com/ds/BC/BC557.pdf" H 6400 3000 50  0001 L CNN
-	1    6400 3000
-	1    0    0    1   
 $EndComp
 $Comp
 L Device:R R8
@@ -299,7 +266,6 @@ Wire Wire Line
 	3800 3500 4000 3500
 Wire Wire Line
 	5000 3300 5000 3500
-Connection ~ 5000 3500
 Wire Wire Line
 	4500 3300 4500 3700
 Wire Wire Line
@@ -370,4 +336,38 @@ F 3 "~" H 3000 3500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3500 3500 3200 3500
+$Comp
+L Transistor_BJT:BC849 Q2
+U 1 1 5CFB19A9
+P 5400 4000
+F 0 "Q2" H 5591 4046 50  0000 L CNN
+F 1 "BC849" H 5591 3955 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5600 3925 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 5400 4000 50  0001 L CNN
+	1    5400 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC859 Q1
+U 1 1 5CFB3F12
+P 4900 3700
+F 0 "Q1" H 5091 3654 50  0000 L CNN
+F 1 "BC859" H 5091 3745 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5100 3625 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC857SERIES_BC858SERIES_BC859SERIES_BC860SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541da0e3a1661" H 4900 3700 50  0001 L CNN
+	1    4900 3700
+	1    0    0    1   
+$EndComp
+Connection ~ 5000 3500
+$Comp
+L Transistor_BJT:BC859 Q3
+U 1 1 5CFB5E41
+P 6400 3000
+F 0 "Q3" H 6591 2954 50  0000 L CNN
+F 1 "BC859" H 6591 3045 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6600 2925 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC857SERIES_BC858SERIES_BC859SERIES_BC860SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541da0e3a1661" H 6400 3000 50  0001 L CNN
+	1    6400 3000
+	1    0    0    1   
+$EndComp
 $EndSCHEMATC
